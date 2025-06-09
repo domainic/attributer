@@ -232,7 +232,7 @@ module Domainic
           default: @default,
           description: @description,
           name: @name,
-          validators: @validator.instance_variable_get(:@handlers)
+          validators: @validator.instance_variable_get(:@handlers),
         }.merge(signature.send(:to_options)) #: initialize_options
       end
 

@@ -133,7 +133,7 @@ RSpec.describe Domainic::Attributer::Attribute::Validator do
       let(:handlers) do
         [
           ->(*) { raise 'First error' },
-          ->(*) { raise 'Second error' }
+          ->(*) { raise 'Second error' },
         ]
       end
       let(:value) { 'hello' }

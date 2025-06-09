@@ -69,6 +69,20 @@ module Domainic
       #
       # @raise [ArgumentError] if the configuration is invalid
       # @return [Attribute] the new Attribute instance
+      #   __todo__ base,
+      #   ?callbacks: Array[Callback::handler] | Callback::handler,
+      #   ?coercers: Array[Coercer::handler] | Coercer::handler,
+      #   ?default: untyped,
+      #   ?description: String?,
+      #   name: String | Symbol,
+      #   ?nilable: bool,
+      #   ?position: Integer?,
+      #   ?read: Signature::visibility_symbol,
+      #   ?required: bool,
+      #   type: Signature::type_symbol,
+      #   ?validators: Array[Validator::handler] | Validator::handler,
+      #   ?write: Signature::visibility_symbol
+      #   ) -> void
       def initialize: (__todo__ base, name: String | Symbol, type: Signature::type_symbol, ?callbacks: Array[Callback::handler] | Callback::handler, ?coercers: Array[Coercer::handler] | Coercer::handler, ?default: untyped, ?description: String?, ?nilable: bool, ?position: Integer?, ?read: Signature::visibility_symbol, ?required: bool, ?validators: Array[Validator::handler] | Validator::handler, ?write: Signature::visibility_symbol) -> void
 
       # Apply a value to the attribute on an instance

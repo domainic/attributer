@@ -112,7 +112,7 @@ module Domainic
           duped.instance_variable_set(:@base, new_base)
           duped.instance_variable_set(
             :@lookup,
-            @lookup.transform_values { |attribute| attribute.dup_with_base(new_base) }
+            @lookup.transform_values { |attribute| attribute.dup_with_base(new_base) },
           )
         end
       end
@@ -201,7 +201,7 @@ module Domainic
             else
               (attribute.default? ? 1 : 0)
             end,
-            attribute.signature.position
+            attribute.signature.position,
           ]
         end.to_h
       end

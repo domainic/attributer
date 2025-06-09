@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+#MISE description="Run unit tests with RSpec"
+
+set -e
+
+bundle exec rspec

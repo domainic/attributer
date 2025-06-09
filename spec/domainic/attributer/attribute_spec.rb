@@ -131,7 +131,7 @@ RSpec.describe Domainic::Attributer::Attribute do
         base,
         name:,
         type:,
-        callbacks: ->(old_value, new_value) { record_change(old_value, new_value) }
+        callbacks: ->(old_value, new_value) { record_change(old_value, new_value) },
       )
       attribute.apply!(instance, 'test value')
       expect(instance.changes).to contain_exactly([nil, 'test value'])
@@ -144,7 +144,7 @@ RSpec.describe Domainic::Attributer::Attribute do
         base,
         name:,
         type:,
-        callbacks: ->(old_value, new_value) { record_change(old_value, new_value) }
+        callbacks: ->(old_value, new_value) { record_change(old_value, new_value) },
       )
       attribute.apply!(instance, 'test value')
       expect(instance.changes).to contain_exactly(['old value', 'test value'])
@@ -202,7 +202,7 @@ RSpec.describe Domainic::Attributer::Attribute do
         Class.new,
         name: :other,
         type: :option,
-        description: 'Other test'
+        description: 'Other test',
       )
       merged = original.merge(other)
       expect(merged.name).to eq(:other)
@@ -214,7 +214,7 @@ RSpec.describe Domainic::Attributer::Attribute do
         Class.new,
         name: :other,
         type: :option,
-        description: 'Other test'
+        description: 'Other test',
       )
       merged = original.merge(other)
       expect(merged.description).to eq('Other test')

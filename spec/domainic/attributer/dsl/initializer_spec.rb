@@ -139,7 +139,7 @@ RSpec.describe Domainic::Attributer::DSL::Initializer do
       Domainic::Attributer::Attribute,
       default?: !signature.argument?,
       name: name,
-      signature: signature
+      signature: signature,
     )
   end
 
@@ -147,7 +147,7 @@ RSpec.describe Domainic::Attributer::DSL::Initializer do
     instance_double(
       Domainic::Attributer::Attribute::Signature,
       argument?: argument,
-      option?: option
+      option?: option,
     )
   end
 end

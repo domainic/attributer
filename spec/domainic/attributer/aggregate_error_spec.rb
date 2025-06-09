@@ -11,7 +11,7 @@ RSpec.describe Domainic::Attributer::AggregateError do
     let(:errors) do
       [
         ArgumentError.new('First error'),
-        TypeError.new('Second error')
+        TypeError.new('Second error'),
       ]
     end
 

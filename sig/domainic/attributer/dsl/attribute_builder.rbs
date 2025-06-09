@@ -22,6 +22,12 @@ module Domainic
         #   {OptionParser#initialize} for details
         #
         # @return [AttributeBuilder] the new AttributeBuilder instance
+        #   __todo__ base,
+        #   String | Symbol attribute_name,
+        #   String | Symbol attribute_type,
+        #   ?Attribute::Validator::handler? type_validator,
+        #   OptionParser::options options,
+        #   ) ? { (?) [self: AttributeBuilder] -> void } -> void
         def initialize: (__todo__ base, String | Symbol attribute_name, String | Symbol attribute_type, ?Attribute::Validator::handler? type_validator, OptionParser::options options) ?{ (?) [self: AttributeBuilder] -> void } -> void
 
         # Build and finalize the {Attribute}

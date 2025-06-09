@@ -2,8 +2,7 @@
 
 [![Domainic::Attributer Version](https://img.shields.io/gem/v/domainic-attributer?style=for-the-badge&logo=rubygems&logoColor=white&logoSize=auto&label=Gem%20Version)](https://rubygems.org/gems/domainic-attributer)
 [![Domainic::Attributer License](https://img.shields.io/github/license/domainic/domainic?style=for-the-badge&logo=opensourceinitiative&logoColor=white&logoSize=auto)](./LICENSE)
-[![Domainic::Attributer Docs](https://img.shields.io/badge/rubydoc-blue?style=for-the-badge&logo=readthedocs&logoColor=white&logoSize=auto&label=docs)](https://rubydoc.info/gems/domainic-attributer/0.1.0)
-[![Domainic::Attributer Open Issues](https://img.shields.io/github/issues-search/domainic/domainic?query=state%3Aopen%20label%3Adomainic-attributer&style=for-the-badge&logo=github&logoColor=white&logoSize=auto&label=issues&color=red)](https://github.com/domainic/domainic/issues?q=state%3Aopen%20label%3Adomainic-attributer%20)
+[![Domainic::Attributer Docs](https://img.shields.io/badge/rubydoc-blue?style=for-the-badge&logo=readthedocs&logoColor=white&logoSize=auto&label=docs)](https://rubydoc.info/gems/domainic-attributer/0.2.2)
 
 Domainic::Attributer is a powerful toolkit that brings clarity and safety to your Ruby class attributes.
 Ever wished your class attributes could:
@@ -69,14 +68,14 @@ For detailed usage instructions and examples, see [USAGE.md](./docs/USAGE.md).
 ## Contributing
 
 We welcome contributions! Please see our
-[Contributing Guidelines](https://github.com/domainic/domainic/wiki/CONTRIBUTING) for:
+[Contributing Guidelines](./docs/CONTRIBUTING) for:
 
 * Development setup and workflow
 * Code style and documentation standards
 * Testing requirements
 * Pull request process
 
-Before contributing, please review our [Code of Conduct](https://github.com/domainic/domainic/wiki/CODE_OF_CONDUCT).
+Before contributing, please review our [Code of Conduct](./docs/CODE_OF_CONDUCT).
 
 ## License
 

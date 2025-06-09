@@ -103,6 +103,14 @@ module Domainic
         #
         # @raise [ArgumentError] if the configuration is invalid
         # @return [Signature] the new Signature instance
+        #   Attribute attribute,
+        #   ?nilable: bool,
+        #   ?position: Integer?,
+        #   ?read: visibility_symbol,
+        #   ?required: bool,
+        #   type: type_symbol,
+        #   ?write: visibility_symbol
+        #   ) -> void
         def initialize: (Attribute attribute, type: type_symbol, ?nilable: bool, ?position: Integer?, ?read: visibility_symbol, ?required: bool, ?write: visibility_symbol) -> void
 
         # Check if this signature is for an argument attribute

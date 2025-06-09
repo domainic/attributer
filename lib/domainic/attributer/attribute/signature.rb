@@ -263,7 +263,7 @@ module Domainic
             read: @read_visibility,
             required: @required,
             type: @type,
-            write: @write_visibility
+            write: @write_visibility,
           }
         end
 

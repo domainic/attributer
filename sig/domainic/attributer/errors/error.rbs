@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Domainic
   module Attributer
     # Base error class for all Attributer-related errors

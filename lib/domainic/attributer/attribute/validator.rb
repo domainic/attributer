@@ -146,7 +146,7 @@ module Domainic
           if handler.is_a?(Proc)
             instance.instance_exec(value, &handler)
           elsif handler.respond_to?(:===)
-            handler === value # rubocop:disable Style/CaseEquality
+            handler === value
           else
             # We should never get here because we validate the handlers in the initializer
             raise TypeError, "`#{attribute_method_name}`: invalid validator: #{handler.inspect}"

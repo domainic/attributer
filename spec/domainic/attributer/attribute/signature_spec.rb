@@ -18,7 +18,7 @@ RSpec.describe Domainic::Attributer::Attribute::Signature do
           type: described_class::TYPE::ARGUMENT,
           position: 1,
           read: described_class::VISIBILITY::PROTECTED,
-          write: described_class::VISIBILITY::PRIVATE
+          write: described_class::VISIBILITY::PRIVATE,
         }
       end
 
@@ -27,7 +27,7 @@ RSpec.describe Domainic::Attributer::Attribute::Signature do
           type: described_class::TYPE::ARGUMENT,
           position: 1,
           read_visibility: described_class::VISIBILITY::PROTECTED,
-          write_visibility: described_class::VISIBILITY::PRIVATE
+          write_visibility: described_class::VISIBILITY::PRIVATE,
         )
       end
     end
@@ -38,7 +38,7 @@ RSpec.describe Domainic::Attributer::Attribute::Signature do
           type: described_class::TYPE::ARGUMENT,
           position: 'invalid',
           read: described_class::VISIBILITY::PROTECTED,
-          write: described_class::VISIBILITY::PRIVATE
+          write: described_class::VISIBILITY::PRIVATE,
         }
       end
 
@@ -51,7 +51,7 @@ RSpec.describe Domainic::Attributer::Attribute::Signature do
           type: described_class::TYPE::ARGUMENT,
           position: 1,
           read: :invalid,
-          write: described_class::VISIBILITY::PRIVATE
+          write: described_class::VISIBILITY::PRIVATE,
         }
       end
 
@@ -64,7 +64,7 @@ RSpec.describe Domainic::Attributer::Attribute::Signature do
           type: described_class::TYPE::ARGUMENT,
           position: 1,
           read: described_class::VISIBILITY::PROTECTED,
-          write: :invalid
+          write: :invalid,
         }
       end
 
@@ -77,7 +77,7 @@ RSpec.describe Domainic::Attributer::Attribute::Signature do
           type: :invalid,
           position: 1,
           read: described_class::VISIBILITY::PROTECTED,
-          write: described_class::VISIBILITY::PRIVATE
+          write: described_class::VISIBILITY::PRIVATE,
         }
       end
 
@@ -88,7 +88,7 @@ RSpec.describe Domainic::Attributer::Attribute::Signature do
       let(:options) do
         {
           type: described_class::TYPE::ARGUMENT,
-          nilable: 'invalid'
+          nilable: 'invalid',
         }
       end
 
@@ -99,7 +99,7 @@ RSpec.describe Domainic::Attributer::Attribute::Signature do
       let(:options) do
         {
           type: described_class::TYPE::ARGUMENT,
-          required: 'invalid'
+          required: 'invalid',
         }
       end
 

@@ -59,7 +59,7 @@ module Domainic
           rescue StandardError => e
             raise CoercionExecutionError.new(
               "Failed to coerce #{accumulator.inspect} with #{handler.inspect}: #{e.message}",
-              handler
+              handler,
             )
           end
         end

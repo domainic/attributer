@@ -26,7 +26,7 @@ RSpec.describe Domainic::Attributer::Attribute::Callback do
       it {
         expect { callback }.to raise_error(
           TypeError,
-          /invalid handler: "not_a_proc"\. Must be a Proc/
+          /invalid handler: "not_a_proc"\. Must be a Proc/,
         )
       }
     end
@@ -88,7 +88,7 @@ RSpec.describe Domainic::Attributer::Attribute::Callback do
       let(:handlers) do
         [
           ->(old, new) { capture_values(old, new, :first) },
-          ->(old, new) { capture_values(old, new, :second) }
+          ->(old, new) { capture_values(old, new, :second) },
         ]
       end
 
@@ -127,7 +127,7 @@ RSpec.describe Domainic::Attributer::Attribute::Callback do
       let(:handlers) do
         [
           ->(*) { raise 'First error' },
-          ->(*) { raise 'Second error' }
+          ->(*) { raise 'Second error' },
         ]
       end
 

@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog], and this project adheres to [Break Ve
 
 ## [Unreleased]
 
+## [v0.2.2] - 2025-06-09
+
+### Changed
+
+* Migrated from the mono-repo
+
 ## [v0.2.0] - 2025-01-01
 
 ### Added
@@ -40,6 +46,7 @@ The format is based on [Keep a Changelog], and this project adheres to [Break Ve
 
 <!-- versions -->
 
-[Unreleased]: https://github.com/domainic/domainic/compare/domainic-attributer-v0.2.0...HEAD
-[v0.2.0]: https://github.com/domainic/domainic/compare/domainic-attributer-v0.1.0...domainic-attributer-v0.2.0
-[v0.1.0]: https://github.com/domainic/domainic/compare/53f3e992ab0e3f0092fd842c4cf89c22e41afa8a...domainic-attributer-v0.1.0
+[Unreleased]: https://github.com/domainic/attributer/compare/0.2.2...HEAD
+[v0.2.2]: https://github.com/domainic/attributer/compare/0.2.0...0.2.2
+[v0.2.0]: https://github.com/domainic/attributer/compare/0.1.0...0.2.0
+[v0.1.0]: https://github.com/domainic/attributer/compare/e9be85cf821d36d572f9c4601b84ec0f5a40f083...0.1.0
