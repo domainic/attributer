@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  gem_version = '0.2.2'
-  semver      = '0.2.2'
+  gem_version = '0.3.0'
+  semver      = '0.3.0'
   repo_url    = 'https://github.com/domainic/attributer'
   home_url    = 'https://domainic.org'
 
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
                      'in life!'
   spec.license     = 'MIT'
 
-  spec.required_ruby_version = '>= 3.1'
+  spec.required_ruby_version = '>= 3.2'
 
   spec.files = Dir[
     '{lib,sig}/**/*',
@@ -40,4 +40,6 @@ Gem::Specification.new do |spec|
     'rubygems_mfa_required' => 'true',
     'source_code_uri' => "#{repo_url}/tree/#{semver}",
   }
+
+  spec.add_dependency 'zeitwerk', '~> 2.7'
 end
